@@ -5,14 +5,14 @@ class_scores = [
     {'school_class': '4d', 'scores': [3,2,4,2,4]},
 ]
 
+avg_school = []
 
-class_count = 0
-scores_sum = 0
+
 for score in class_scores:
-    scores_sum = sum(score['scores'])/len(score['scores'])
-    class_count =+ 1
-    print(scores_sum)
-print(scores_sum/class_count)
+    avg_class = sum(score['scores'])/len(score['scores'])
+    avg_school.append(avg_class)
+    print("средняя по классу: ", avg_class)
+print("Средняя по школе", sum(avg_school)/len(avg_school))
 
 
 
